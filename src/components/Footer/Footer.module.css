@@ -4,11 +4,13 @@
   justify-content: space-around;
   margin-bottom: 50px;
   margin-top: 50px;
+  flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
 }
 
 .footer_img_container {
   width: 156px;
   height: 156px;
+  margin-bottom: 20px; /* Добавим отступ снизу для лучшего разделения на малых экранах */
 }
 
 .footer_img {
@@ -69,4 +71,32 @@
   align-items: center;
   justify-content: center;
   gap: 5px;
+}
+
+@media (max-width: 720px) {
+  .footer_container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_img_container,
+  .footer_download,
+  .footer_info,
+  .footer_contacts {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_logo_container {
+    justify-content: center;
+  }
+
+  .footer_tel_wrap {
+    justify-content: center;
+  }
+
+  .footer_link {
+    text-align: center;
+  }
 }

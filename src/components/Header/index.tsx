@@ -1,13 +1,20 @@
+import { useState } from "react";
 import styles from "./Header.module.css";
 import logo from "../../../public/Logo.svg";
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <header className={styles.header}>
       <div>
         <img src={logo} alt="Логотип" />
       </div>
-      <nav className={styles.header__nav}>
+      <nav className={`${styles.header__nav} ${menuOpen ? styles.open : ""}`}>
         <a className={styles.header__link} href="#1">
           О нас
         </a>
@@ -27,6 +34,14 @@ const Header = () => {
           Услуги и сервисы
         </a>
       </nav>
+      <div
+        className={`${styles.hamburger} ${menuOpen ? styles.open : ""}`}
+        onClick={toggleMenu}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </header>
   );
 };
