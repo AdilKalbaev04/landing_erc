@@ -78,7 +78,7 @@ const Main = () => {
             <div className={styles.main_slide_img_container}>
               <img
                 className={styles.main_img}
-                src={img2}
+                src={img}
                 alt="Описание изображения"
               />
             </div>
@@ -96,7 +96,7 @@ const Main = () => {
             <div className={styles.main_slide_img_container}>
               <img
                 className={styles.main_img}
-                src={img2}
+                src={img}
                 alt="Описание изображения"
               />
             </div>
@@ -114,7 +114,7 @@ const Main = () => {
             <div className={styles.main_slide_img_container}>
               <img
                 className={styles.main_img}
-                src={img2}
+                src={img}
                 alt="Описание изображения"
               />
             </div>

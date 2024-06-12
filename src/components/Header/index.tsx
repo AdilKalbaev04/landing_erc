@@ -24,10 +24,10 @@ const Header = () => {
         <a className={styles.header__link} href="#3">
           Контакты
         </a>
-        <a className={styles.header__link} href="#">
+        <a className={styles.header__link} href="/login">
           Вход
         </a>
-        <a className={styles.header__link} href="#">
+        <a className={styles.header__link} href="register">
           Регистрация
         </a>
         <a className={styles.header__link} href="#">
